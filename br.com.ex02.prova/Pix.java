@@ -1,7 +1,7 @@
 public class Pix extends Pagamento {
     private boolean transacaoPix;
 
-    public Pix(String dataHoraPagamento, int numeroPagamento, double valorPago) {
+    public Pix(String dataHoraPagamento, int numeroPagamento, double valorPago, boolean transacaoPix) {
         super(dataHoraPagamento, numeroPagamento, valorPago);
        this.transacaoPix = transacaoPix;
     }

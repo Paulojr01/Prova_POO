@@ -4,7 +4,8 @@ public class CartaoCredito extends Pagamento {
     private String bandeiraCartao;
     private String titutalarCartao;
 
-    public CartaoCredito(String dataHoraPagamento, int numeroPagamento, double valorPago) {
+    public CartaoCredito(String dataHoraPagamento, int numeroPagamento, double valorPago, String numcartao, String bandeiraCartao, String titutalarCartao) {
+        
         super(dataHoraPagamento, numeroPagamento, valorPago);
             this.numcartao = numcartao;
             this.bandeiraCartao = bandeiraCartao;

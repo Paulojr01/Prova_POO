@@ -2,11 +2,11 @@ public class CartaoDebito extends Pagamento{
     private String numCartao;
     private String titularCartao;
 
-    public CartaoDebito(String dataHoraPagamento, int numeroPagamento, double valorPago) {
+    public CartaoDebito(String dataHoraPagamento, int numeroPagamento, double valorPago, String numCartao, String titularCartao) {
+ 
         super(dataHoraPagamento, numeroPagamento, valorPago);
         this.numCartao = numCartao;
         this.titularCartao = titularCartao;
-        //TODO Auto-generated constructor stub
     }
     
  
@@ -30,8 +30,7 @@ public class CartaoDebito extends Pagamento{
     @Override
     public String imprimirCupomFiscal () {
 
-        " [dataHoraPagamento =" super.getDataHoraPagamento() + ", numeroPagamento=" + super.getNumeroPagamento()+ numeroPagamento + ", valorPago=" + super.getValorPago()+ "]";
-        return "CartaoDebito [numCartao=" + numCartao + ", titularCartao=" + titularCartao + "]";
+        return " [dataHoraPagamento =" +  super.getDataHoraPagamento() + ", numeroPagamento=" + super.getNumeroPagamento() + super.getNumeroPagamento() + ", valorPago=" + super.getValorPago()+ "] \nCartaoDebito [numCartao=" + this.numCartao + ", titularCartao=" + this.titularCartao + "]";
     }
         
 }

@@ -35,7 +35,6 @@ public class Pagamento {
         this.valorPago = valorPago;
     }
 
-    @Override
     public String imprimirCupomFiscal () {
         return "Pagamento [dataHoraPagamento=" + dataHoraPagamento + ", numeroPagamento=" + numeroPagamento
                 + ", valorPago=" + valorPago + "]";
