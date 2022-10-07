@@ -8,16 +8,17 @@ public class Distribuicao extends Projeto {
         this.qtde = qtde;
     }
     
-    public boolean validadeProjeto(){
+         public boolean validadeProjeto(){
 
         return false;}
 
-    public  String imprimeProjeto(){
+        public  String imprimeProjeto(){
         
         return descAlimento;
 
     }
 
+    
     
 
     
