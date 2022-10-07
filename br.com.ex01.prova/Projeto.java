@@ -43,6 +43,10 @@ public abstract class Projeto {
     public void setDatafim(String datafim) {
         this.datafim = datafim;
     }
+
+    public abstract boolean ValidaProjeto();
+
+    public abstract String ImprimeProjeto();
     
 
 

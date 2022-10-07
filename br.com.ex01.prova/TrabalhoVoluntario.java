@@ -1,11 +1,50 @@
 public class TrabalhoVoluntario extends Projeto {
     private String tipoTrabalho;
+
     private int duracaoTrabalho;
 
-    public TrabalhoVoluntario(String nomeProjeto, String descricao, String endereco, String datainicio,
-            String datafim) {
-        super(nomeProjeto, descricao, endereco, datainicio, datafim);
-        //TODO Auto-generated constructor stub
+    public TrabalhoVoluntario(String nomeProjeto, String descricao, String dataInicio, String dataFim,
+            String tipoTrabalho, int duracaoTrabalho) {
+        super(nomeProjeto, descricao, dataInicio, dataFim, tipoTrabalho);
+        this.tipoTrabalho = tipoTrabalho;
+        this.duracaoTrabalho = duracaoTrabalho;
+    }
+
+    @Override
+    public boolean ValidaProjeto() {
+        if (getDuracaoTrabalho() > 2){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public String ImprimeProjeto() {
+        return null;
+    }
+
+    public String getTipoTrabalho() {
+        return tipoTrabalho;
+    }
+
+    public void setTipoTrabalho(String tipoTrabalho) {
+        this.tipoTrabalho = tipoTrabalho;
+    }
+
+    public int getDuracaoTrabalho() {
+        return duracaoTrabalho;
+    }
+
+    public void setDuracaoTrabalho(int duracaoTrabalho) {
+        this.duracaoTrabalho = duracaoTrabalho;
+    }
+
+    @Override
+    public String toString() {
+
+        return " nomeProjeto=" + super.getNomeProjeto() + ", descricao=" + super.getDescricao() + ", dataInicio=" + super.getDatafim()
+        + ", dataFim=" + super.getDatafim() + "tipoTrabalho=" + getTipoTrabalho() + ", duracaoTrabalho=" + getDuracaoTrabalho();
     }
 
     
